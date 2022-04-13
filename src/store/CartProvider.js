@@ -11,7 +11,7 @@ const cartReducer = (state, action) => {
   console.log(`(cartReducer) State is`, state);
   console.log(`(cardReducer) Action is`, action);
 
-  if (action.type =='ADD')
+  if (action.type ==='ADD')
   {
     const updatedTotalAmount = state.totalAmount + action.item.price * action.item.amount;
 
@@ -38,7 +38,7 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount
     };
   }
-  else if (action.type == 'REMOVE')
+  else if (action.type === 'REMOVE')
   {
     const existingCartItemIndex = state.items.findIndex(
       (item) => item.id === action.id

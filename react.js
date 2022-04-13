@@ -4,4 +4,4 @@ import { useReducer } from 'react';
 // 2nd elemnt: function which allows you to displatch an action to the reducer
 const [cartState, dispatchCartToAction] = useReducer(cartReducer, defaultCartState);
 
-// difference between useState and useReducer
+// difference between useState and useReducerpwd
